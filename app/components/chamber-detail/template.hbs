@@ -1,6 +1,15 @@
 {{#each committee as |currentCommittee|}}
+<h2>{{currentCommittee.name}} </h2><br>
 Phone: {{currentCommittee.phone}} <br>
 Committee ID: {{currentCommittee.committee_id}}
 {{/each}}
 
-{{log 'got to committee-detail pg, info display'}}
+{{#if showSubcommittees}}<br>
+<h4>Subcommitties:</h4>
+  {{#each subCommitteeParams as |sub|}}
+    <p>{{sub.name}}</p>
+  {{/each}}
+{{else}}
+
+{{/if}}
+<button {{action 'showDetails'}}>show/hide Subcommittees</button>
