@@ -1,0 +1,8 @@
+<ul>
+  {{#each model as |legislator|}}
+  <li>
+    {{legislator.first_name}} {{legislator.last_name}}
+    <a href="{{legislator.website}}">{{legislator.website}}</a>
+  </li>
+  {{/each}}
+</ul>
