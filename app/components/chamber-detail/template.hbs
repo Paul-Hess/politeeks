@@ -1,9 +1,6 @@
-{{chamber-tile committee=committee}}
-{{log model}}
-
-
-{{mcommittee.name}}
-{{committee.phone}}
-{{committee.subcommittee}}
+{{#each committee as |currentCommittee|}}
+Phone: {{currentCommittee.phone}} <br>
+Committee ID: {{currentCommittee.committee_id}}
+{{/each}}
 
 {{log 'got to committee-detail pg, info display'}}

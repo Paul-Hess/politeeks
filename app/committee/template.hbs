@@ -3,8 +3,10 @@
 
 <ul>
   {{#each model as |committee|}}
-  <li>{{#link-to 'committee'}}
-    {{committee.name}}{{/link-to}}<br>
+  <li>
+    {{#link-to 'committee-detail' committee.committee_id}}
+    {{committee.name}} {{/link-to}}
+
   </li><br>
   {{/each}}
 </ul>
