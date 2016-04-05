@@ -1,0 +1,9 @@
+<ul>
+  {{#each model as |committee|}}
+  <li>{{#link-to 'chamber' committee.name}}
+    {{committee.name}}
+    {{/link-to}}<br>
+  </li>
+  <br>
+  {{/each}}
+</ul>

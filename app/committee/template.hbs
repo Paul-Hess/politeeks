@@ -3,9 +3,8 @@
 
 <ul>
   {{#each model as |committee|}}
-  <li>
-    {{committee.name}}<br>
-    Phone Number: <span>{{committee.phone}}</span>
+  <li>{{#link-to 'committee'}}
+    {{committee.name}}{{/link-to}}<br>
   </li><br>
   {{/each}}
 </ul>
