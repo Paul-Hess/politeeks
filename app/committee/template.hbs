@@ -1,8 +1,11 @@
+<h1>Chamber: {{model.0.chamber}}</h1>
+{{log model.0.chamber}}
+
 <ul>
   {{#each model as |committee|}}
   <li>
-    {{committee.chamber}} {{committee.name}}
-    <span>{{committee.phone}}</span>
-  </li>
+    {{committee.name}}<br>
+    Phone Number: <span>{{committee.phone}}</span>
+  </li><br>
   {{/each}}
 </ul>
