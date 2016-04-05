@@ -1,0 +1,17 @@
+<div class="form-groups">
+  <label for="chamber">Chambers</label>
+  {{#x-select value=chamber}}
+    {{#each chambers as |chamber|}}
+      {{#x-option value=chamber}}{{chamber}}{{/x-option}}
+    {{/each}}
+  {{/x-select}}
+  <button {{action 'selectChamber'}}>Submit</button>
+</div>
+
+
+<!-- <select onchange={{action 'selectChamber' value='target.value'}}>
+  {{log "foo"}}
+  {{#each chambers as |chamberChoice|}}
+    <option value={{chamberChoice}} selected={{eq chamber  chamberChoice}}>{{chamberChoice}}</option>
+  {{/each}}
+</select> -->

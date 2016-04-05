@@ -1,0 +1,8 @@
+<ul>
+  {{#each model as |committee|}}
+  <li>
+    {{committee.chamber}} {{committee.name}}
+    <span>{{committee.phone}}</span>
+  </li>
+  {{/each}}
+</ul>
